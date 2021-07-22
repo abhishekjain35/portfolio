@@ -18,4 +18,5 @@ export const NavRightContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
+  color: ${({ theme }) => theme.secondary};
 `;

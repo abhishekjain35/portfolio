@@ -1,13 +1,23 @@
 import NavbarComponent from "../navbar";
-import { Container } from "./styles/home";
+import { Container, MainPage } from "./styles/home";
 import particles from "./assets/particles.svg";
+import particlesDark from "./assets/particles-dark.svg";
+import { useTheme } from "@emotion/react";
 
 const HomeComponent = () => {
-  console.log(particles);
+  const theme = useTheme();
   return (
-    <Container style={{ backgroundImage: `url(${particles.src})` }}>
-      <NavbarComponent />
-      <h1>HII</h1>
+    <Container
+      style={{
+        backgroundImage: `url(${
+          theme.darkMode ? particlesDark.src : particles.src
+        })`,
+      }}
+    >
+      <MainPage>
+        <NavbarComponent />
+        <h1>HII</h1>
+      </MainPage>
     </Container>
   );
 };
