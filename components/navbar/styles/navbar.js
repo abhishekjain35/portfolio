@@ -17,6 +17,14 @@ export const NavRightContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
+  font-size: 22px;
   color: ${({ theme }) => theme.secondary};
+
+  span {
+    transition: 0.3s ease;
+  }
+  span:hover {
+    color: #ff4a57;
+    /* font-size: 22px; */
+  }
 `;

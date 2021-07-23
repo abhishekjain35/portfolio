@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const theme = {
     light: {
       primary: "#f1f2f3",
-      secondary: "#000",
+      secondary: "#0e0d0c",
     },
     dark: {
       primary: "#000",
