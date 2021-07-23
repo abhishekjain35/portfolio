@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/globals.css";
 import { ThemeProvider } from "@emotion/react";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const theme = {

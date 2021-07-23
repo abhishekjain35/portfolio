@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const Container = styled.nav`
   padding: 20px 20vw;
   width: 100vw;
-  height: 80px;
+  height: 95px;
   background: transparent;
 `;
 

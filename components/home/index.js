@@ -1,8 +1,9 @@
 import NavbarComponent from "../navbar";
-import { Container, MainPage } from "./styles/home";
+import { Container } from "./styles/home";
 import particles from "./assets/particles.svg";
 import particlesDark from "./assets/particles-dark.svg";
 import { useTheme } from "@emotion/react";
+import Home from "./home";
 
 const HomeComponent = () => {
   const theme = useTheme();
@@ -14,10 +15,8 @@ const HomeComponent = () => {
         })`,
       }}
     >
-      <MainPage>
-        <NavbarComponent />
-        <h1>HII</h1>
-      </MainPage>
+      <NavbarComponent />
+      <Home />
     </Container>
   );
 };
