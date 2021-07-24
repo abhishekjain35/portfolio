@@ -36,7 +36,7 @@ async function wait(ms) {
 async function perform(node, edits, speed = 60) {
   for (const op of editor(edits)) {
     op(node);
-    await wait(speed + speed/2);
+    await wait(speed + speed / 2);
   }
 }
 

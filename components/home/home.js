@@ -30,7 +30,7 @@ const Home = () => {
                 "Exploring the tech.",
                 1000
               ]}
-              loop={2}
+              loop={1}
               wrapper="span"
             />
           </p>
