@@ -67,7 +67,7 @@ export const Links = styled.ul`
   color: ${({ theme }) => theme.secondary};
 `;
 
-export const LinkWrapper = styled.div`
+export const LinkWrapper = styled.li`
   margin: 15px 0;
   & > svg {
     margin-right: 20px;

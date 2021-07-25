@@ -5,7 +5,12 @@ const ToggleComponent = () => {
   const theme = useTheme();
   return (
     <Switch className="switch" htmlFor="themeInput">
-      <input type="checkbox" id="themeInput" onClick={() => theme.toggle()} />
+      <input
+        type="checkbox"
+        id="themeInput"
+        aria-label="Select Theme"
+        onClick={() => theme.toggle()}
+      />
       <span className="slider round">
         <div className="moon"></div>
         <div className="sun"></div>

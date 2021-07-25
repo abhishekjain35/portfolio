@@ -17,7 +17,7 @@ const NavbarComponent = () => {
       }
     });
   }, []);
-  console.log(scroll);
+  
   return (
     <Container scroll={scroll}>
       <FlexWrapper>
