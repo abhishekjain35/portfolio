@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/globals.css";
 import { ThemeProvider } from "@emotion/react";
 import "../styles/globals.css";
@@ -9,20 +9,31 @@ function MyApp({ Component, pageProps }) {
     light: {
       primary: "#f1f2f3",
       secondary: "#0e0d0c",
-      accentColor: "#6335c7"
+      accentColor: "#6335c7",
     },
     dark: {
       primary: "#000",
       secondary: "#f1f2f3",
-      accentColor: "#ff4a57"
+      accentColor: "#ff4a57",
     },
   };
 
   const [darkMode, setDarkMode] = useState(false);
 
   const toggle = () => {
+    localStorage.setItem("darkMode", !darkMode);
     setDarkMode(!darkMode);
   };
+
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem("darkMode");
+    if (isDarkMode === null) {
+      localStorage.setItem("darkMode", false);
+    }
+    if (isDarkMode === "true") {
+      setDarkMode(true);
+    }
+  }, []);
 
   return (
     <>

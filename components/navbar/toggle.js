@@ -9,7 +9,8 @@ const ToggleComponent = () => {
         type="checkbox"
         id="themeInput"
         aria-label="Select Theme"
-        onClick={() => theme.toggle()}
+        checked={theme.darkMode}
+        onChange={() => theme.toggle()}
       />
       <span className="slider round">
         <div className="moon"></div>
