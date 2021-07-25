@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, memo } from "react";
-// import { type, type as loopedType } from "@camwiegert/typical";
 
 import styles from "./styles/typing.module.css";
 

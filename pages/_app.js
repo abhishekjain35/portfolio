@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     light: {
       primary: "#f1f2f3",
       secondary: "#0e0d0c",
-      accentColor: "#ffdd6e"
+      accentColor: "#6335c7"
     },
     dark: {
       primary: "#000",

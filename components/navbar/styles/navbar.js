@@ -4,7 +4,11 @@ export const Container = styled.nav`
   padding: 20px 20vw;
   width: 100vw;
   height: 95px;
-  background: transparent;
+  position: fixed;
+  z-index: 10;
+  background: ${({ scroll, theme }) =>
+    scroll ? theme.primary : "transparent"};
+  z-index: 11;
 `;
 
 export const FlexWrapper = styled.div`

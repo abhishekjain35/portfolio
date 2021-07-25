@@ -3,10 +3,23 @@ import Logo from "./assets/logo";
 import Toggle from "./toggle";
 import { useTheme } from "@emotion/react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const NavbarComponent = () => {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      if (window.scrollY >= 95) {
+        setScroll(true);
+      }
+      if (window.scrollY < 95) {
+        setScroll(false);
+      }
+    });
+  }, []);
+  console.log(scroll);
   return (
-    <Container>
+    <Container scroll={scroll}>
       <FlexWrapper>
         <span>
           <Link href="/">

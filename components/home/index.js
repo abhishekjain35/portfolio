@@ -21,7 +21,6 @@ const HomeComponent = () => {
         <Home />
       </Container>
       <About />
-      
     </div>
   );
 };

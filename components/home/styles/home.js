@@ -5,13 +5,14 @@ export const Container = styled.div`
 `;
 
 export const MainPage = styled.main`
-  height: calc(100vh - 95px);
+  height: 100vh;
   color: ${({ theme }) => theme.secondary};
   font-family: Poppins;
   /* font-family: Roboto-medium; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding-top: 95px;
 `;
 
 export const InfoSection = styled.section`
