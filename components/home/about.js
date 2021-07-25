@@ -1,12 +1,19 @@
-import { Container } from "./styles/about";
-// import AboutHero
+import { Container, AboutSection, ImageSection, Blob, Header } from "./styles/about";
+import Image from "next/image";
+import AboutHero from "./assets/about-hero.svg";
 
-const AboutSection = () => {
+const About = () => {
   return (
     <Container>
-      {/* <h1>Hii</h1> */}
+      <AboutSection>
+        <Header>About Me!</Header>
+      </AboutSection>
+      <ImageSection>
+        <Image src={AboutHero} alt="About Image" />
+        <Blob />
+      </ImageSection>
     </Container>
   );
 };
 
-export default AboutSection;
+export default About;

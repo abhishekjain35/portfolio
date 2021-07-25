@@ -4,8 +4,8 @@ import Switch from "./styles/toggle";
 const ToggleComponent = () => {
   const theme = useTheme();
   return (
-    <Switch className="switch">
-      <input type="checkbox" onClick={() => theme.toggle()} />
+    <Switch className="switch" htmlFor="themeInput">
+      <input type="checkbox" id="themeInput" onClick={() => theme.toggle()} />
       <span className="slider round">
         <div className="moon"></div>
         <div className="sun"></div>

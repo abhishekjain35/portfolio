@@ -10,7 +10,7 @@ const NavbarComponent = () => {
       <FlexWrapper>
         <span>
           <Link href="/">
-            <a>
+            <a aria-label="Logo">
               <Logo />
             </a>
           </Link>

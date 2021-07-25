@@ -28,7 +28,7 @@ const Home = () => {
                 "Gaming.",
                 1000,
                 "Exploring the tech.",
-                1000
+                1000,
               ]}
               loop={1}
               wrapper="span"

@@ -18,8 +18,10 @@ a {
 @font-face {
   font-family: Roboto-medium;
   src: url("../components/home/assets/Roboto-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Poppins;
   src: url("../components/home/assets/Poppins-Regular.ttf");
+  font-display: swap;
 }
