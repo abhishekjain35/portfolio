@@ -65,6 +65,7 @@ export const Links = styled.ul`
   width: 100%;
   font-family: Poppins;
   color: ${({ theme }) => theme.secondary};
+  list-style: none;
 `;
 
 export const LinkWrapper = styled.li`

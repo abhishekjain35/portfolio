@@ -5,8 +5,9 @@ import particlesDark from "./assets/particles-dark.svg";
 import { useTheme } from "@emotion/react";
 import Home from "./home";
 import About from "./about";
+import Blogs from "./blogs";
 
-const HomeComponent = () => {
+const HomeComponent = ({ blogs }) => {
   const theme = useTheme();
   return (
     <div>
@@ -21,6 +22,7 @@ const HomeComponent = () => {
         <Home />
       </Container>
       <About />
+      <Blogs blogs={blogs} />
     </div>
   );
 };
