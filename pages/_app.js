@@ -7,15 +7,22 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   const theme = {
     light: {
-      primary: "#f1f2f3",
-      secondary: "#0e0d0c",
+      background: "#f1f2f3",
+      text: "#0e0d0c",
       accentColor: "#6335c7",
+      cardColor: "#fff",
     },
     dark: {
-      primary: "#000",
-      secondary: "#f1f2f3",
+      background: "#202335",
+      text: "#fff",
       accentColor: "#ff4a57",
+      cardColor: "#242739",
     },
+    // dark: {
+    //   primary: "#000",
+    //   secondary: "#f1f2f3",
+    //   accentColor: "#ff4a57",
+    // },
   };
 
   const [darkMode, setDarkMode] = useState(false);

@@ -6,7 +6,7 @@ export const Container = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
-  background: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.background};
   overflow: hidden;
 `;
 
@@ -41,7 +41,7 @@ export const Blob = styled.div`
 `;
 
 export const Header = styled.h1`
-  color: ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => theme.text};
   font-size: 3.5vw;
   border-bottom: 5px solid
     ${({ theme }) => (theme.darkMode ? "#cacaca" : "#ffdd6e")};
@@ -64,7 +64,7 @@ export const Links = styled.ul`
   padding-top: 20px;
   width: 100%;
   font-family: Poppins;
-  color: ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => theme.text};
   list-style: none;
 `;
 

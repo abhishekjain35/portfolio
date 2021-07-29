@@ -4,12 +4,11 @@ export const Container = styled.div`
   width: 35%;
   margin: 15px;
   padding: 0px 0px 15px;
-  background: rgb(255, 255, 255);
   box-shadow: rgb(0 0 0 / 11%) 0px 2px 13px 0px;
   overflow-wrap: break-word;
   border-radius: 10px;
   transition: transform 0.5s ease 0s;
-  background: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.cardColor};
   border-radius: 10px;
   overflow: hidden;
   & img {
@@ -22,14 +21,14 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
 `;
 
 export const Info = styled.div`
   display: flex;
-  /* justify-content: space-between; */
-  color: ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => theme.text};
   font-size: 14px;
+  margin-bottom: 10px;
 `;
 
 export const SmallInfo = styled.div`
@@ -38,7 +37,7 @@ export const SmallInfo = styled.div`
   margin-right: 15px;
   & svg {
     margin-right: 5px;
-    fill: ${({ theme }) => theme.secondary};
+    fill: ${({ theme }) => theme.text};
   }
   & > a {
     color: ${({ theme }) => theme.accentColor};
@@ -48,7 +47,7 @@ export const SmallInfo = styled.div`
 
 export const Svg = styled.svg`
   fill: none !important;
-  stroke: ${({ theme }) => theme.secondary};
+  stroke: ${({ theme }) => theme.text};
   .st0 {
     stroke-width: 2;
     stroke-linecap: round;
@@ -73,8 +72,49 @@ export const Title = styled.h5`
   letter-spacing: 1px;
   color: #fff;
   word-wrap: break-word;
-  color: ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => (theme.darkMode ? "#fff" : theme.text)};
   font-family: Poppins;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
+  transition: 0.3s ease;
+  margin: 0 0 10px 0;
+  &:hover {
+    color: ${({ theme }) => theme.accentColor};
+  }
+`;
+
+export const ReadMore = styled.a`
+  .cls-1 {
+    fill: blue;
+  }
+  svg {
+    background-color: ${({ theme }) => theme.accentColor};
+    border-radius: 50%;
+    color: ${({ theme }) => theme.background};
+    margin-left: 15px;
+    transition: 0.3s;
+  }
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+  font-weight: 600;
+  box-shadow: none;
+  text-decoration: none;
+  font-size: 16px;
+  color: ${({ theme }) => theme.accentColor};
+  display: inline;
+  &:hover {
+    color: ${({ theme }) => (theme.darkMode ? theme.text : "#202335")};
+    svg {
+      background-color: ${({ theme }) =>
+        theme.darkMode ? theme.text : "#202335"};
+      margin-left: 10px;
+    }
+  }
+`;
+
+export const Description = styled.p`
+  word-wrap: break-word;
+  opacity: 0.8;
+  color: ${({ theme }) => theme.text};
 `;

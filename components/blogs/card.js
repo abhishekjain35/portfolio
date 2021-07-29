@@ -1,22 +1,38 @@
-import { Container, Content, Info, SmallInfo, Svg, Title } from "./styles/card";
+import {
+  Container,
+  Content,
+  Info,
+  SmallInfo,
+  Svg,
+  Title,
+  ReadMore,
+  Description,
+} from "./styles/card";
 import Image from "next/image";
 
 const Card = ({ image, likes, date, title, description, url, profile_url }) => {
   return (
     <Container>
       <div style={{ position: "relative", minHeight: "250px" }}>
-        <Image
-          style={{
-            height: "100% !important",
-            width: "100% !important",
-            position: "relative",
-          }}
-          src={image}
-          alt="Banner Image"
-          layout="fill"
-        />
+        <a href={url} target="_blank" rel="noreferrer" >
+          <Image
+            style={{
+              height: "100% !important",
+              width: "100% !important",
+              position: "relative",
+            }}
+            src={image}
+            alt="Banner Image"
+            layout="fill"
+          />
+        </a>
       </div>
       <Content>
+        <Title>
+          <a href={url}>
+            <b>{title}</b>
+          </a>
+        </Title>
         <Info>
           <SmallInfo>
             <svg
@@ -25,7 +41,6 @@ const Card = ({ image, likes, date, title, description, url, profile_url }) => {
               height="15"
               width="15"
             >
-              <title />
               <g id="User">
                 <path d="M41.2452,33.0349a16,16,0,1,0-18.49,0A26.0412,26.0412,0,0,0,4,58a2,2,0,0,0,2,2H58a2,2,0,0,0,2-2A26.0412,26.0412,0,0,0,41.2452,33.0349ZM20,20A12,12,0,1,1,32,32,12.0137,12.0137,0,0,1,20,20ZM8.09,56A22.0293,22.0293,0,0,1,30,36h4A22.0293,22.0293,0,0,1,55.91,56Z" />
               </g>
@@ -74,11 +89,26 @@ const Card = ({ image, likes, date, title, description, url, profile_url }) => {
             {likes}
           </SmallInfo>
         </Info>
-        <Title>
-          <a href={url}>
-            <b>{title}</b>
-          </a>
-        </Title>
+        <Description>{description}</Description>
+        <span>
+          <ReadMore href={url}>
+            <span>Read more</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              width="13"
+              height="13"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </ReadMore>
+        </span>
       </Content>
     </Container>
   );

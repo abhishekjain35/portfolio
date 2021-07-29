@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 export const MainPage = styled.main`
   height: 100vh;
-  color: ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => theme.text};
   font-family: Poppins;
   /* font-family: Roboto-medium; */
   display: flex;
@@ -52,7 +52,7 @@ export const InfoTextContainer = styled.aside`
     border-radius: 50px;
     font-size: 15px;
     border-color: #ff4a57;
-    color: ${({ theme }) => theme.secondary};
+    color: ${({ theme }) => theme.text};
     box-shadow: none;
     text-decoration: none;
     transition: 0.3s ease;
@@ -60,6 +60,6 @@ export const InfoTextContainer = styled.aside`
   }
   a:hover {
     background: #ff4a57;
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.background};
   }
 `;

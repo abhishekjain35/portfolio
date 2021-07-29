@@ -7,7 +7,7 @@ export const Container = styled.nav`
   position: fixed;
   z-index: 10;
   background: ${({ scroll, theme }) =>
-    scroll ? theme.primary : "transparent"};
+    scroll ? theme.background : "transparent"};
   z-index: 11;
 `;
 
@@ -22,7 +22,7 @@ export const NavRightContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 22px;
-  color: ${({ theme }) => theme.secondary};
+  color: ${({ theme }) => theme.text};
 
   span {
     transition: 0.3s ease;

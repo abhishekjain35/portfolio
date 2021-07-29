@@ -1,11 +1,14 @@
 import Card from "../blogs/card";
-import { Container, Cards } from "./styles/blogs";
+import { Container, Cards, Header } from "./styles/blogs";
 
 const options = { year: "numeric", month: "long", day: "numeric" };
 const BlogsComponent = ({ blogs }) => {
-  console.log(blogs);
   return (
     <Container>
+      <Header>
+        <h1>My Latest Blogs</h1>
+        <div />
+      </Header>
       <Cards>
         {blogs.map((blog) => {
           let date = new Date(blog.published_timestamp);
