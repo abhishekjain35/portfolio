@@ -6,13 +6,13 @@ export const Container = styled.section`
   position: relative;
   display: flex;
   justify-content: center;
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.alternateBackground};
   overflow: hidden;
 `;
 
 export const AboutSection = styled.section`
   width: 55%;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@ export const AboutSection = styled.section`
 
 export const ImageSection = styled.section`
   width: 45%;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,8 +31,8 @@ export const ImageSection = styled.section`
 `;
 
 export const Blob = styled.div`
-  height: 70em;
-  width: 72em;
+  height: 100%;
+  width: 150%;
   background: ${({ theme }) => (theme.darkMode ? "#303f9f" : "#ffdd6e")};
   /* background: #ffdd6e; */
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;

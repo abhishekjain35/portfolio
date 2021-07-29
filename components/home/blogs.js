@@ -1,8 +1,11 @@
 import Card from "../blogs/card";
-import { Container, Cards, Header } from "./styles/blogs";
+import { Container, Cards, Header, Footer } from "./styles/blogs";
+import Link from "next/link";
+import Constellation from "./assets/constellation.svg";
 
 const options = { year: "numeric", month: "long", day: "numeric" };
 const BlogsComponent = ({ blogs }) => {
+  console.log(Constellation);
   return (
     <Container>
       <Header>
@@ -26,6 +29,13 @@ const BlogsComponent = ({ blogs }) => {
           );
         })}
       </Cards>
+      <Footer>
+        <Link href="/blogs">
+          <a>
+            <h1>View all blogs</h1>
+          </a>
+        </Link>
+      </Footer>
     </Container>
   );
 };
