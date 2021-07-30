@@ -1,12 +1,16 @@
 import styled from "@emotion/styled";
 import Constellation from "../assets/constellation.svg";
+import ConstellationLight from "../assets/constellation-light.svg";
 
 export const Container = styled.section`
   width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(${Constellation.src});
+  background: ${({ theme }) =>
+    theme.darkMode
+      ? `url(${Constellation.src})`
+      : `url(${ConstellationLight.src})`};
   padding: 50px 0;
 `;
 
