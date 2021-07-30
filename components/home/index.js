@@ -6,6 +6,7 @@ import { useTheme } from "@emotion/react";
 import Home from "./home";
 import About from "./about";
 import Blogs from "./blogs";
+import Projects from "./projects";
 
 const HomeComponent = ({ blogs }) => {
   const theme = useTheme();
@@ -23,6 +24,7 @@ const HomeComponent = ({ blogs }) => {
       </Container>
       <About />
       <Blogs blogs={blogs} />
+      <Projects />
     </div>
   );
 };

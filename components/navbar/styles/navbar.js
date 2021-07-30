@@ -28,7 +28,6 @@ export const NavRightContainer = styled.div`
     transition: 0.3s ease;
   }
   span:hover {
-    color: #ff4a57;
-    /* font-size: 22px; */
+    color: ${({ theme }) => theme.accentColor};
   }
 `;
