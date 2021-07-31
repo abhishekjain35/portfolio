@@ -1,7 +1,7 @@
-import ProjectCard from "../projects/card";
+import ProjectsPage from "../projects";
 
 const Projects = () => {
-  return <ProjectCard />;
+  return <ProjectsPage />;
 };
 
 export default Projects;
