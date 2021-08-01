@@ -1,10 +1,27 @@
-import { Container, Header } from "./styles/projects";
-import ProjectCard from "./card";
+import { Container, Header, Cards } from "./styles/projects";
+import Card from "./card";
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ projects }) => {
   return (
     <Container>
-      <Header></Header>
+      <Header>
+        <h1>Recent Projects</h1>
+        <div />
+      </Header>
+      <Cards>
+        {projects.map((project) => {
+          return (
+            <Card
+              key={project.name}
+              title={project.name}
+              description={project.description}
+              date={project.date}
+              github={project.link}
+              url={project.url}
+            />
+          );
+        })}
+      </Cards>
     </Container>
   );
 };

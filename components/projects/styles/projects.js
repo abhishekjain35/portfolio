@@ -29,3 +29,11 @@ export const Header = styled.div`
     width: 100px;
   }
 `;
+
+export const Cards = styled.div`
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0 20px 0;
+`;
