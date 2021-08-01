@@ -7,7 +7,7 @@ export const Container = styled.nav`
   position: fixed;
   z-index: 10;
   background: ${({ scroll, theme }) =>
-    scroll ? theme.background : "transparent"};
+    scroll ? theme.alternateBackground : "transparent"};
   z-index: 11;
 `;
 

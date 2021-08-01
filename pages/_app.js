@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   const theme = {
     light: {
       background: "#f1f2f3",
-      alternateBackground: "",
+      alternateBackground: "#f8f8ff",
       text: "#0e0d0c",
       accentColor: "#6335c7",
       cardColor: "#fff",
