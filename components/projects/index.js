@@ -1,9 +1,10 @@
-import { Container, Header, Cards } from "./styles/projects";
+import Link from "next/link";
+import { Container, Header, Cards, Footer } from "./styles/projects";
 import Card from "./card";
 
-const ProjectsPage = ({ projects }) => {
+const ProjectsPage = ({ projects, page = false }) => {
   return (
-    <Container>
+    <Container page={page}>
       <Header>
         <h1>Recent Projects</h1>
         <div />
@@ -22,6 +23,13 @@ const ProjectsPage = ({ projects }) => {
           );
         })}
       </Cards>
+      <Footer>
+        <Link href="/projects">
+          <a>
+            <h1>View all projects</h1>
+          </a>
+        </Link>
+      </Footer>
     </Container>
   );
 };

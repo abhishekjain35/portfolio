@@ -1,5 +1,22 @@
+import ProjectsPage from "../components/projects";
+import NavBar from "../components/navbar";
+
 const Projects = () => {
   const projects = [
+    {
+      name: "Fyyur - Artist booking site",
+      description:
+        "Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of shows between local performing artists and venues. This site lets you list new artists and venues, discover them, and create shows with artists as a venue owner.",
+      link: "https://github.com/abhishekjain35/fyyur-project",
+      date: "July, 2021",
+    },
+    {
+      name: "Trivia Game",
+      description:
+        "Trivia is application where you can play with friends and family. Anyone can search and add questions based on categories. Play trivia based on random questions from selected categories etc.",
+      link: "https://github.com/abhishekjain35/trivia-game",
+      date: "July, 2021",
+    },
     {
       name: "MiniHouse",
       description:
@@ -7,14 +24,6 @@ const Projects = () => {
       link: "https://github.com/abhishekjain35/Mini-house-client",
       date: "Mar - Apr, 2021",
       url: "https://minihouse.herokuapp.com/",
-    },
-    {
-      name: "Portfolio-pwa",
-      description:
-        "This is the 2nd version of my portfolio built with React. It's a Progressive Web App (PWA) and could be installed as native app and works offline as well.",
-      link: "https://github.com/abhishekjain35/portfolio-pwa",
-      date: "May - June, 2020",
-      url: "https://abhishekdev.netlify.app/",
     },
     {
       name: "Take-notes",
@@ -25,18 +34,19 @@ const Projects = () => {
       url: "https://takenotes1.netlify.app/",
     },
     {
+      name: "Portfolio-pwa",
+      description:
+        "This is the 2nd version of my portfolio built with React. It's a Progressive Web App (PWA) and could be installed as native app and works offline as well.",
+      link: "https://github.com/abhishekjain35/portfolio-pwa",
+      date: "May - June, 2020",
+      url: "https://abhishekdev.netlify.app/",
+    },
+    {
       name: "Tshirt-store",
       description:
         "Made with MERN Stack, this is complete e-commerce t-shirt store with the user and admin panels, Role-based Authentication, Payments through Stripe and Braintree.",
       link: "https://github.com/abhishekjain35/Tshirt-store",
       date: "March - Apr, 2020",
-    },
-    {
-      name: "Trivia Game",
-      description:
-        "Trivia is application where you can play with friends and family. Anyone can search and add questions based on categories. Play trivia based on random questions from selected categories etc.",
-      link: "https://github.com/abhishekjain35/trivia-game",
-      date: "July, 2021",
     },
     {
       name: "Vidly-backend",
@@ -62,7 +72,12 @@ const Projects = () => {
     },
   ];
 
-  return <h1>PROjects </h1>;
+  return (
+    <>
+      <NavBar />
+      <ProjectsPage projects={projects} page={true} />
+    </>
+  );
 };
 
 export default Projects;
