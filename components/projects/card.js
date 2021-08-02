@@ -1,5 +1,6 @@
 import {
   Container,
+  Info,
   TitleWrapper,
   Title,
   Date,
@@ -12,14 +13,16 @@ import {
 const ProjectCard = ({ title, description, github, date, url }) => {
   return (
     <Container>
-      <TitleWrapper>
-        <Title>{title}</Title>
-        <Date>{date}</Date>
-      </TitleWrapper>
-      <Description>{description}</Description>
+      <Info>
+        <TitleWrapper>
+          <Title>{title}</Title>
+          <Date>{date}</Date>
+        </TitleWrapper>
+        <Description>{description}</Description>
+      </Info>
       <Links>
         {url ? (
-          <Demo href={url}>
+          <Demo href={url} target="_blank">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -38,7 +41,7 @@ const ProjectCard = ({ title, description, github, date, url }) => {
             <span>Live Demo</span>
           </Demo>
         ) : null}
-        <Github href={github}>
+        <Github href={github} target="_blank">
           <svg
             aria-hidden="true"
             focusable="false"

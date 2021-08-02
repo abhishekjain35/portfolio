@@ -5,7 +5,6 @@ import Constellation from "./assets/constellation.svg";
 
 const options = { year: "numeric", month: "long", day: "numeric" };
 const BlogsComponent = ({ blogs }) => {
-  console.log(Constellation);
   return (
     <Container>
       <Header>

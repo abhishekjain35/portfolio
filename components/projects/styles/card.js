@@ -13,7 +13,14 @@ export const Container = styled.div`
   /* overflow: hidden; */
   border: 10px solid ${({ theme }) => theme.accentColor};
   color: ${({ theme }) => theme.text};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
+
+export const Info = styled.div`
+
+`
 
 export const TitleWrapper = styled.div`
   color: ${({ theme }) => theme.text};
@@ -38,14 +45,21 @@ export const Description = styled.div`
 export const Links = styled.div`
   display: flex;
   margin: 30px 0 10px 0;
+  font-size: 15px;
   & > a {
     display: flex;
     align-items: center;
     margin-right: 20px;
     background: ${({ theme }) => theme.background};
-    padding: 12px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: 0.3s all;
     svg {
       margin-right: 10px;
+    }
+    &:hover {
+      color: white;
+      background: ${({ theme }) => theme.accentColor};
     }
   }
 `;
