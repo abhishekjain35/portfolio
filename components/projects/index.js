@@ -23,13 +23,15 @@ const ProjectsPage = ({ projects, page = false }) => {
           );
         })}
       </Cards>
-      <Footer>
-        <Link href="/projects">
-          <a>
-            <h1>View all projects</h1>
-          </a>
-        </Link>
-      </Footer>
+      {!page ? (
+        <Footer>
+          <Link href="/projects">
+            <a>
+              <h1>View all projects</h1>
+            </a>
+          </Link>
+        </Footer>
+      ) : null}
     </Container>
   );
 };

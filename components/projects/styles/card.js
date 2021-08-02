@@ -18,10 +18,6 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 
-export const Info = styled.div`
-
-`
-
 export const TitleWrapper = styled.div`
   color: ${({ theme }) => theme.text};
 `;

@@ -5,7 +5,7 @@ import particlesDark from "./assets/particles-dark.svg";
 import { useTheme } from "@emotion/react";
 import Home from "./home";
 import About from "./about";
-import Blogs from "./blogs";
+import Blogs from "../blogs";
 import Projects from "./projects";
 
 const HomeComponent = ({ blogs }) => {

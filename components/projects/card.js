@@ -1,6 +1,5 @@
 import {
   Container,
-  Info,
   TitleWrapper,
   Title,
   Date,
@@ -13,13 +12,13 @@ import {
 const ProjectCard = ({ title, description, github, date, url }) => {
   return (
     <Container>
-      <Info>
+      <div>
         <TitleWrapper>
           <Title>{title}</Title>
           <Date>{date}</Date>
         </TitleWrapper>
         <Description>{description}</Description>
-      </Info>
+      </div>
       <Links>
         {url ? (
           <Demo href={url} target="_blank">
