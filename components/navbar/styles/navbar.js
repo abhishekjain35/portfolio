@@ -17,7 +17,7 @@ export const FlexWrapper = styled.div`
 `;
 
 export const NavRightContainer = styled.div`
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;

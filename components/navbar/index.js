@@ -29,6 +29,11 @@ const NavbarComponent = () => {
           </Link>
         </span>
         <NavRightContainer>
+          <Link href="/">
+            <a>
+              <span>Home</span>
+            </a>
+          </Link>
           <Link href="/blogs">
             <a>
               <span>Blogs</span>
