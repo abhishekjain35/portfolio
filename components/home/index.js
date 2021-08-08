@@ -7,6 +7,7 @@ import Home from "./home";
 import About from "./about";
 import Blogs from "../blogs";
 import Projects from "./projects";
+import Contacts from "./contact";
 
 const HomeComponent = ({ blogs }) => {
   const theme = useTheme();
@@ -25,6 +26,7 @@ const HomeComponent = ({ blogs }) => {
       <About />
       <Blogs blogs={blogs} />
       <Projects />
+      <Contacts />
     </div>
   );
 };
