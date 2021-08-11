@@ -1,8 +1,23 @@
-import { Container, Lines, Title, Wrapper, P } from "./styles/contact";
+import {
+  Container,
+  Lines,
+  Title,
+  Wrapper,
+  P,
+  SocialMedia,
+  LeftContainer,
+  RightContainer,
+  Label,
+  Link,
+  ButtonContainer,
+  Button,
+  SectionTitle,
+} from "./styles/contact";
 
 const Contacts = () => {
   return (
     <Container>
+      <SectionTitle>Contacts</SectionTitle>
       <Lines className="lines">
         <div className="lines_i lines_i__1"></div>
         <div className="lines_i lines_i__2"></div>
@@ -20,6 +35,25 @@ const Contacts = () => {
           <P>Having a great idea?</P>
           <P>Let&apos;s Talk about it!</P>
         </Title>
+        <SocialMedia>
+          <LeftContainer>
+            <Label>Twitter:</Label>
+            <Link href="https://twitter.com/Abhishek_Jain35" target="_blank">
+              twitter.com/Abhishek_Jain35
+            </Link>
+          </LeftContainer>
+          <RightContainer>
+            <Label>E-mail:</Label>
+            <Link href="mailto:abhishekjai35@gmail.com">
+              abhishekjai35@gmail.com
+            </Link>
+          </RightContainer>
+        </SocialMedia>
+        <ButtonContainer>
+          <Button href="https://www.linkedin.com/in/abhishekjain35/">
+            CONNECT WITH ME!
+          </Button>
+        </ButtonContainer>
       </Wrapper>
     </Container>
   );
