@@ -2,9 +2,10 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 95px);
   background: ${({ theme }) => theme.alternateBackground};
   background: #fff;
+  position: relative;
 `;
 
 export const Lines = styled.div`
@@ -16,7 +17,8 @@ export const Lines = styled.div`
     height: 100%;
     width: calc(12.5% - 10px);
   }
-  & > .lines_i__1, .lines_i__10 {
+  & > .lines_i__1,
+  .lines_i__10 {
     width: 40px !important;
   }
   & > .lines_i:before {
@@ -40,5 +42,20 @@ export const Lines = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  
-`
+  width: calc(75% - 60px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const Title = styled.div`
+  margin-top: -80px;
+  color: ${({ theme }) => (theme.darkMode ? theme.text : "#1d2026")};
+`;
+
+export const P = styled.p`
+  font-family: Gotham-bold;
+  font-size: 30px;
+  margin: 5px 0;
+`;

@@ -1,4 +1,4 @@
-import { Container, Lines } from "./styles/contact";
+import { Container, Lines, Title, Wrapper, P } from "./styles/contact";
 
 const Contacts = () => {
   return (
@@ -15,7 +15,12 @@ const Contacts = () => {
         <div className="lines_i lines_i__9"></div>
         <div className="lines_i lines_i__10"></div>
       </Lines>
-      <h1>HIi</h1>
+      <Wrapper>
+        <Title>
+          <P>Having a great idea?</P>
+          <P>Let&apos;s Talk about it!</P>
+        </Title>
+      </Wrapper>
     </Container>
   );
 };

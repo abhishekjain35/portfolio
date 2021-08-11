@@ -25,3 +25,8 @@ a {
   src: url("../components/home/assets/Poppins-Regular.ttf");
   font-display: swap;
 }
+@font-face {
+  font-family: Gotham-bold;
+  src: url("../components/home/assets/GothamB.ttf");
+  font-display: swap;
+}
