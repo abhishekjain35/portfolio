@@ -4,6 +4,7 @@ import {
   ImageSection,
   InfoTextContainer,
 } from "./styles/home";
+import Link from "next/link";
 import Typical from "./typing";
 import Image from "next/image";
 import Main from "./assets/hero-graphic.webp";
@@ -34,7 +35,9 @@ const Home = () => {
               wrapper="span"
             />
           </p>
-          <a href="#work">See my work</a>
+          <Link href="/projects">
+            <a>See my work</a>
+          </Link>
         </InfoTextContainer>
       </InfoSection>
       <ImageSection>

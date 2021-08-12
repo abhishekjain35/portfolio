@@ -12,12 +12,14 @@ import {
   ButtonContainer,
   Button,
   SectionTitle,
+  SectionText,
 } from "./styles/contact";
 
 const Contacts = () => {
   return (
     <Container>
       <SectionTitle>Contacts</SectionTitle>
+      <SectionText>contact me!</SectionText>
       <Lines className="lines">
         <div className="lines_i lines_i__1"></div>
         <div className="lines_i lines_i__2"></div>
@@ -55,6 +57,17 @@ const Contacts = () => {
           </Button>
         </ButtonContainer>
       </Wrapper>
+      {/* <Footer>
+        <CodingLinks>
+
+        </CodingLinks>
+        <Copyright>
+
+        </Copyright>
+        <SocialLinks>
+
+        </SocialLinks>
+      </Footer> */}
     </Container>
   );
 };

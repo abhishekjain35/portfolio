@@ -138,5 +138,24 @@ export const SectionTitle = styled.div`
   white-space: nowrap;
   font-family: Gotham-bold;
   font-size: 300px;
-  /* color: #292b30; */
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    font-size: 200px;
+  }
+`;
+
+export const SectionText = styled.div`
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  writing-mode: vertical-lr;
+  color: #c6c8cc;
+  font-size: 18px;
+  width: 17px;
+  text-transform: uppercase;
+  font-family: Gotham-bold;
+  letter-spacing: 0.4em;
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    font-size: 12px;
+    width: 11px;
+  }
 `;
