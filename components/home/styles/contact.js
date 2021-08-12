@@ -159,3 +159,10 @@ export const SectionText = styled.div`
     width: 11px;
   }
 `;
+
+export const Footer = styled.div`
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+`

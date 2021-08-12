@@ -30,3 +30,8 @@ a {
   src: url("../components/home/assets/GothamB.ttf");
   font-display: swap;
 }
+@font-face {
+  font-family: Gotham;
+  src: url("../components/footer/styles/gotham.ttf");
+  font-display: swap;
+}

@@ -13,7 +13,10 @@ import {
   Button,
   SectionTitle,
   SectionText,
+  Footer,
 } from "./styles/contact";
+
+import { BaseFooter } from "../footer";
 
 const Contacts = () => {
   return (
@@ -57,17 +60,9 @@ const Contacts = () => {
           </Button>
         </ButtonContainer>
       </Wrapper>
-      {/* <Footer>
-        <CodingLinks>
-
-        </CodingLinks>
-        <Copyright>
-
-        </Copyright>
-        <SocialLinks>
-
-        </SocialLinks>
-      </Footer> */}
+      <Footer>
+        <BaseFooter />
+      </Footer>
     </Container>
   );
 };
