@@ -163,6 +163,6 @@ export const SectionText = styled.div`
 export const Footer = styled.div`
   background: transparent;
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
 `
