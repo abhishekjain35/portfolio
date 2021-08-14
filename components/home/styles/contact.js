@@ -3,8 +3,7 @@ import styled from "@emotion/styled";
 export const Container = styled.div`
   width: 100vw;
   height: calc(100vh - 95px);
-  background: ${({ theme }) => theme.alternateBackground};
-  background: #fff;
+  background: ${({ theme }) => (theme.darkMode ? theme.background : "#fff")};
   position: relative;
 `;
 
@@ -22,7 +21,8 @@ export const Lines = styled.div`
     width: 40px !important;
   }
   & > .lines_i:before {
-    background: #f0f2f7;
+    /* background: #f0f2f7; */
+    background: ${({ theme }) => (theme.darkMode ? "#2c2f44" : "#f0f2f7")};
     content: "";
     display: block;
     height: 100%;
@@ -88,7 +88,7 @@ export const Label = styled.div`
 `;
 
 export const Link = styled.a`
-  color: #23252a;
+  color: ${({ theme }) => (theme.darkMode ? theme.text : "#23252a")};
   display: inline-block;
   font-family: "Gotham-bold";
   font-size: 24px;
@@ -130,7 +130,7 @@ export const Button = styled.a`
 `;
 
 export const SectionTitle = styled.div`
-  color: #f0f2f7;
+  color: ${({ theme }) => (theme.darkMode ? "#2b3140" : "#f0f2f7")};
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -165,4 +165,4 @@ export const Footer = styled.div`
   position: absolute;
   bottom: 50px;
   width: 100%;
-`
+`;

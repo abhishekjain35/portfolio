@@ -17,7 +17,7 @@ export const Links = styled.div`
 `;
 
 export const Link = styled.a`
-  color: #23252a;
+  color: ${({ theme }) => (theme.darkMode ? theme.text : "#23252a")};
   font-size: 14px;
   text-decoration: none;
   display: block;
@@ -27,15 +27,12 @@ export const Link = styled.a`
   }
   @media only screen and (min-width: 1201px) {
     &:before {
-      background: #23252a;
+      background: ${({ theme }) => (theme.darkMode ? theme.text : "#23252a")};
       position: absolute;
-      /* bottom: -10px; */
-      /* left: 0; */
       bottom: 0;
       height: 1px;
       width: 100%;
       content: "";
-      /* background-color: #000; */
       transform-origin: right top;
       transform: scaleX(0);
       transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
