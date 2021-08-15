@@ -20,11 +20,6 @@ function MyApp({ Component, pageProps }) {
       accentColor: "#ff4a57",
       cardColor: "#242739",
     },
-    // dark: {
-    //   primary: "#000",
-    //   secondary: "#f1f2f3",
-    //   accentColor: "#ff4a57",
-    // },
   };
 
   const [darkMode, setDarkMode] = useState(false);

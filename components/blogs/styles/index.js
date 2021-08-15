@@ -37,6 +37,11 @@ export const Header = styled.div`
     height: 5px;
     width: 100px;
   }
+  @media only screen and (max-width: 1000px){
+    h1{
+      font-size: 35px;
+    }
+  }
 `;
 
 export const Footer = styled.footer`

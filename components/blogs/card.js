@@ -1,5 +1,6 @@
 import {
   Container,
+  ImageWrapper,
   Content,
   Info,
   SmallInfo,
@@ -13,7 +14,7 @@ import Image from "next/image";
 const Card = ({ image, likes, date, title, description, url, profile_url }) => {
   return (
     <Container>
-      <div style={{ position: "relative", minHeight: "250px" }}>
+      <ImageWrapper>
         <a href={url} target="_blank" rel="noreferrer" >
           <Image
             style={{
@@ -26,7 +27,7 @@ const Card = ({ image, likes, date, title, description, url, profile_url }) => {
             layout="fill"
           />
         </a>
-      </div>
+      </ImageWrapper>
       <Content>
         <Title>
           <a href={url}>
@@ -45,7 +46,7 @@ const Card = ({ image, likes, date, title, description, url, profile_url }) => {
                 <path d="M41.2452,33.0349a16,16,0,1,0-18.49,0A26.0412,26.0412,0,0,0,4,58a2,2,0,0,0,2,2H58a2,2,0,0,0,2-2A26.0412,26.0412,0,0,0,41.2452,33.0349ZM20,20A12,12,0,1,1,32,32,12.0137,12.0137,0,0,1,20,20ZM8.09,56A22.0293,22.0293,0,0,1,30,36h4A22.0293,22.0293,0,0,1,55.91,56Z" />
               </g>
             </svg>
-            By<a href="https://dev.to/abhishekjain35/"> abhishek</a>
+            By<a href="https://dev.to/abhishekjain35/"> @abhishek</a>
           </SmallInfo>
           <SmallInfo>
             <Svg

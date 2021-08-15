@@ -16,12 +16,32 @@ export const Container = styled.div`
     border-radius: 10px 10px 0px 0px;
     width: 100%;
   }
+  @media only screen and (max-width: 1600px) {
+    width: 45%;
+  }
+  @media only screen and (max-width: 1000px) {
+    width: 70%;
+  }
+  @media only screen and (max-width: 650px) {
+    width: 100%;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  min-height: 250px;
+  @media only screen and (max-width: 500px) {
+    min-height: 50vw;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding: 30px;
+  @media only screen and (max-width: 500px) {
+    padding: 25px;
+  }
 `;
 
 export const Info = styled.div`
@@ -29,12 +49,13 @@ export const Info = styled.div`
   color: ${({ theme }) => theme.text};
   font-size: 14px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 `;
 
 export const SmallInfo = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  margin: 5px 15px 0 0;
   & svg {
     margin-right: 5px;
     fill: ${({ theme }) => theme.text};
