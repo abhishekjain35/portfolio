@@ -1,14 +1,12 @@
 import Link from "next/link";
 import { Container, Header, Cards, Footer } from "./styles/projects";
+import SectionTitle from "../reusable-components/SectionTitle";
 import Card from "./card";
 
 const ProjectsPage = ({ projects, page = false }) => {
   return (
     <Container page={page}>
-      <Header>
-        <h1>Recent Projects</h1>
-        <div />
-      </Header>
+      <SectionTitle title="Recent Projects" />
       <Cards>
         {projects.map((project) => {
           return (

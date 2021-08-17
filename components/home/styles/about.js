@@ -38,6 +38,9 @@ export const Blob = styled.div`
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   opacity: ${({ theme }) => (theme.darkMode ? 0.2 : 0.1)};
   position: absolute;
+  @media only screen and (max-width: 1000px){
+    width: 200%;
+  }
 `;
 
 export const Header = styled.h1`

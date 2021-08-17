@@ -1,15 +1,13 @@
 import Card from "./card";
-import { Container, Cards, Header, Footer } from "./styles";
+import { Container, Cards, Footer } from "./styles";
+import SectionTitle from "../reusable-components/SectionTitle";
 import Link from "next/link";
 
 const options = { year: "numeric", month: "long", day: "numeric" };
 const BlogsComponent = ({ blogs, page = false }) => {
   return (
     <Container page={page}>
-      <Header>
-        <h1>My Latest Blogs</h1>
-        <div />
-      </Header>
+      <SectionTitle title="My Latest Blogs" />
       <Cards>
         {blogs.map((blog) => {
           let date = new Date(blog.published_timestamp);
