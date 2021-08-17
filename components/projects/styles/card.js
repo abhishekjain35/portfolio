@@ -1,21 +1,14 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.div`
-  width: 35%;
-  margin: 15px;
-  padding: 20px;
-  box-shadow: rgb(0 0 0 / 11%) 0px 2px 13px 0px;
-  overflow-wrap: break-word;
-  border-radius: 10px;
-  transition: transform 0.5s ease 0s;
-  background: ${({ theme }) => theme.cardColor};
-  border-radius: 10px;
-  /* overflow: hidden; */
+export const Wrapper = styled.div`
   border: 10px solid ${({ theme }) => theme.accentColor};
   color: ${({ theme }) => theme.text};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+  border-radius: 10px;
 `;
 
 export const TitleWrapper = styled.div`

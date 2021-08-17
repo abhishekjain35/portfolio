@@ -1,28 +1,11 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.div`
-  width: 35%;
-  margin: 15px;
+export const Wrapper = styled.div`
   padding: 0px 0px 15px;
-  box-shadow: rgb(0 0 0 / 11%) 0px 2px 13px 0px;
-  overflow-wrap: break-word;
-  border-radius: 10px;
-  transition: transform 0.5s ease 0s;
-  background: ${({ theme }) => theme.cardColor};
-  border-radius: 10px;
   overflow: hidden;
   & img {
     min-height: 250px;
     border-radius: 10px 10px 0px 0px;
-    width: 100%;
-  }
-  @media only screen and (max-width: 1600px) {
-    width: 45%;
-  }
-  @media only screen and (max-width: 1000px) {
-    width: 70%;
-  }
-  @media only screen and (max-width: 650px) {
     width: 100%;
   }
 `;
