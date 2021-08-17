@@ -5,8 +5,6 @@ import {
   Date,
   Description,
   Links,
-  Demo,
-  Github,
   Wrapper,
 } from "./styles/card";
 
@@ -23,7 +21,7 @@ const ProjectCard = ({ title, description, github, date, url }) => {
         </div>
         <Links>
           {url ? (
-            <Demo href={url} target="_blank">
+            <a href={url} target="_blank" rel="noreferrer">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -40,9 +38,9 @@ const ProjectCard = ({ title, description, github, date, url }) => {
                 ></path>
               </svg>
               <span>Live Demo</span>
-            </Demo>
+            </a>
           ) : null}
-          <Github href={github} target="_blank">
+          <a href={github} target="_blank" rel="noreferrer">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -59,7 +57,7 @@ const ProjectCard = ({ title, description, github, date, url }) => {
               ></path>
             </svg>
             <span>Github</span>
-          </Github>
+          </a>
         </Links>
       </Wrapper>
     </CardContainer>

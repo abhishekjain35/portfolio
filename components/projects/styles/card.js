@@ -51,16 +51,14 @@ export const Links = styled.div`
       background: ${({ theme }) => theme.accentColor};
     }
   }
+  @media only screen and (max-width: 430px) {
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+    & > a {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      padding-left: 5px;
+    }
+  }
 `;
-
-export const Demo = styled.a`
-  /* display: flex;
-  align-items: center;
-  margin-right: 20px;
-  background: ${({ theme }) => theme.background};
-  padding: 15px;
-  svg {
-    margin-right: 10px;
-  } */
-`;
-export const Github = styled.a``;
