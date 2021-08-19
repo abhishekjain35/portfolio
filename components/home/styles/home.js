@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
   /* height: 100vh; */
+  background: #f1f2f3;
+  background-size: cover;
 `;
 
 export const MainPage = styled.main`
@@ -100,35 +102,14 @@ export const InfoTextContainer = styled.aside`
   }
   @media only screen and (max-width: 500px) {
     p {
-      font-size: 17px;
+      font-size: 4vw;
     }
     h1 {
-      font-size: 35px;
+      font-size: 9vw;
     }
     a {
       padding: 8px 25px;
-      font-size: 12px;
-    }
-  }
-  @media only screen and (max-width: 400px) {
-    p {
-      font-size: 15px;
-    }
-    h1 {
-      font-size: 30px;
-    }
-    a{
-      margin-top: 20px;
-      padding: 5px 15px;
-      font-size: 10px;
-    }
-  }
-  @media only screen and (max-width: 400px) {
-    p {
-      font-size: 12px;
-    }
-    h1 {
-      font-size: 25px;
+      font-size: 3vw;
     }
   }
 `;

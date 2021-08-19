@@ -179,7 +179,7 @@ export const SectionText = styled.div`
   text-transform: uppercase;
   font-family: Gotham-bold;
   letter-spacing: 0.4em;
-  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media only screen and (max-width: 1600px) {
     font-size: 12px;
     width: 11px;
   }

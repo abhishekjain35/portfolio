@@ -22,7 +22,7 @@ export const Link = styled.a`
   text-decoration: none;
   display: block;
   position: relative;
-  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media only screen and (max-width: 1600px) {
     font-size: 11px;
   }
   @media only screen and (min-width: 1201px) {
@@ -50,7 +50,7 @@ export const Link = styled.a`
 export const Copyright = styled.div`
   color: #c6c8cc;
   font-size: 14px;
-  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media only screen and (max-width: 1600px) {
     font-size: 11px;
   }
 `;

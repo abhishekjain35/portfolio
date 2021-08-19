@@ -17,5 +17,6 @@ export const Container = styled.div`
   }
   @media only screen and (max-width: 650px) {
     width: 100%;
+    margin: 15px 0;
   }
 `;
