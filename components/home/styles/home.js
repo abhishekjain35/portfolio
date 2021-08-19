@@ -1,18 +1,23 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
 `;
 
 export const MainPage = styled.main`
   height: 100vh;
   color: ${({ theme }) => theme.text};
   font-family: Poppins;
-  /* font-family: Roboto-medium; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding-top: 95px;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    height: initial;
+  }
 `;
 
 export const InfoSection = styled.section`
@@ -21,6 +26,12 @@ export const InfoSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (max-width: 1000px) {
+    height: initial;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
 `;
 
 export const ImageSection = styled.section`
@@ -29,10 +40,27 @@ export const ImageSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (max-width: 1000px) {
+    height: initial;
+    margin-bottom: 10vh;
+    margin-top: 100px;
+    width: 60%;
+  }
+  @media only screen and (max-width: 750px) {
+    width: 70%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    margin-top: 20px;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 95%;
+  }
 `;
 
 export const InfoTextContainer = styled.aside`
   padding-top: 20px;
+  margin: auto;
   p {
     margin: 0;
     font-size: 1.8vw;
@@ -61,5 +89,46 @@ export const InfoTextContainer = styled.aside`
   a:hover {
     background: #ff4a57;
     color: ${({ theme }) => theme.background};
+  }
+  @media only screen and (max-width: 1000px) {
+    p {
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    p {
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    a {
+      padding: 8px 25px;
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    p {
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    a{
+      margin-top: 20px;
+      padding: 5px 15px;
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    p {
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 25px;
+    }
   }
 `;

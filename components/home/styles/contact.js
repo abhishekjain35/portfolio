@@ -6,6 +6,9 @@ export const Container = styled.div`
   background: ${({ theme }) => (theme.darkMode ? theme.background : "#fff")};
   position: relative;
   overflow-y: hidden;
+  @media only screen and (max-width: 750px) {
+    min-height: 450px;
+  }
 `;
 
 export const Lines = styled.div`
@@ -22,7 +25,6 @@ export const Lines = styled.div`
     width: 40px !important;
   }
   & > .lines_i:before {
-    /* background: #f0f2f7; */
     background: ${({ theme }) => (theme.darkMode ? "#2c2f44" : "#f0f2f7")};
     content: "";
     display: block;
@@ -65,15 +67,24 @@ export const SocialMedia = styled.section`
   width: 100%;
   margin: auto;
   display: flex;
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftContainer = styled.div`
   width: 62.5%;
   margin-bottom: 160px;
+  @media only screen and (max-width: 700px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const RightContainer = styled.div`
   margin-bottom: 70px;
+  @media only screen and (max-width: 700px) {
+    margin-bottom: 160px;
+  }
 `;
 
 export const Label = styled.div`
@@ -81,10 +92,13 @@ export const Label = styled.div`
   color: #8e9199;
   margin-bottom: 50px;
   margin-top: 130px;
-  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media only screen and (max-width: 1600px) {
     font-size: 13px;
     margin-top: 80px;
     margin-bottom: 30px;
+  }
+  @media only screen and (max-width: 700px) {
+    margin-top: 40px;
   }
 `;
 
@@ -95,7 +109,7 @@ export const Link = styled.a`
   font-size: 24px;
   position: relative;
   transition: color 0.5s;
-  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media only screen and (max-width: 1600px) {
     font-size: 16px;
   }
 `;
@@ -103,12 +117,6 @@ export const Link = styled.a`
 export const ButtonContainer = styled.div``;
 
 export const Button = styled.a`
-  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
-    height: 50px;
-    line-height: 50px;
-    font-size: 12px;
-    box-shadow: 0 10px 35px -15px #ff0333;
-  }
   display: block;
   margin: auto;
   letter-spacing: 0.4em;
@@ -123,6 +131,19 @@ export const Button = styled.a`
   line-height: 75px;
   box-shadow: 0 20px 50px -20px #ff0333;
   transition: all 0.2s;
+  @media only screen and (max-width: 1600px) {
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    box-shadow: 0 10px 35px -15px #ff0333;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    width: 66.6%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 
   &:hover {
     box-shadow: 0 5px 25px -15px #ff0333;
@@ -139,8 +160,11 @@ export const SectionTitle = styled.div`
   white-space: nowrap;
   font-family: Gotham-bold;
   font-size: 300px;
-  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media only screen and (max-width: 1600px) {
     font-size: 200px;
+  }
+  @media only screen and (max-width: 750px) {
+    font-size: 120px;
   }
 `;
 
@@ -158,6 +182,9 @@ export const SectionText = styled.div`
   @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     font-size: 12px;
     width: 11px;
+  }
+  @media only screen and (max-width: 750px) {
+    display: none;
   }
 `;
 
