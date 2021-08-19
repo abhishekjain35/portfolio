@@ -8,6 +8,11 @@ export const Container = styled.section`
   justify-content: center;
   background: ${({ theme }) => theme.alternateBackground};
   overflow: hidden;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    height: initial;
+  }
 `;
 
 export const AboutSection = styled.section`
@@ -19,6 +24,13 @@ export const AboutSection = styled.section`
   align-items: flex-start;
   padding: 20px;
   z-index: 10;
+  @media only screen and (max-width: 800px) {
+    width: 70%;
+    align-items: center;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 export const ImageSection = styled.section`
@@ -28,6 +40,12 @@ export const ImageSection = styled.section`
   flex-direction: column;
   justify-content: center;
   position: relative;
+  @media only screen and (max-width: 800px) {
+    width: 70%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 export const Blob = styled.div`
@@ -38,8 +56,9 @@ export const Blob = styled.div`
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   opacity: ${({ theme }) => (theme.darkMode ? 0.2 : 0.1)};
   position: absolute;
-  @media only screen and (max-width: 1000px){
-    width: 200%;
+  @media only screen and (max-width: 1200px) {
+    height: 50%;
+    width: 100%;
   }
 `;
 
@@ -51,6 +70,11 @@ export const Header = styled.h1`
   font-family: Roboto-medium;
   font-style: italic;
   color: ${({ theme }) => theme.accentColor};
+  @media only screen and (max-width: 800px) {
+    font-size: 8vw;
+    margin: 0.8em 0.5em 0.8em 0;
+    /* font-style: normal; */
+  }
 `;
 
 export const AboutInfo = styled.aside`
@@ -60,6 +84,11 @@ export const AboutInfo = styled.aside`
   font-family: Roboto-medium;
   line-height: 160%;
   z-index: 10;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
 `;
 
 export const Links = styled.ul`
@@ -69,6 +98,10 @@ export const Links = styled.ul`
   font-family: Poppins;
   color: ${({ theme }) => theme.text};
   list-style: none;
+  @media only screen and (max-width: 1000px) {
+    text-align: center;
+    padding-top: 0;
+  }
 `;
 
 export const LinkWrapper = styled.li`
