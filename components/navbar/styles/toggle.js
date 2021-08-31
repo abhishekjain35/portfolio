@@ -25,6 +25,18 @@ const Switch = styled.label`
   transform: translate(-50%, -50%);
   width: 65px;
   height: 34px;
+  ${({ mobile }) =>
+    mobile
+      ? `
+      @media only screen and (max-width: 600px) {
+    display: initial;
+  }
+  @media only screen and (min-width: 601px) {
+    display: none;
+  }
+  margin-left: 60px;
+`
+      : null}
 
   input {
     opacity: 0;

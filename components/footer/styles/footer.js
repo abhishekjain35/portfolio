@@ -20,7 +20,8 @@ export const Link = styled.a`
   color: ${({ theme }) => (theme.darkMode ? theme.text : "#23252a")};
   font-size: 14px;
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
   @media only screen and (max-width: 1600px) {
     font-size: 11px;

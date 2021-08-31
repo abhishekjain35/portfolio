@@ -1,10 +1,10 @@
 import { useTheme } from "@emotion/react";
 import Switch from "./styles/toggle";
 
-const ToggleComponent = () => {
+const ToggleComponent = ({mobile}) => {
   const theme = useTheme();
   return (
-    <Switch className="switch" htmlFor="themeInput">
+    <Switch className="switch" htmlFor="themeInput" mobile={mobile}>
       <input
         type="checkbox"
         id="themeInput"
