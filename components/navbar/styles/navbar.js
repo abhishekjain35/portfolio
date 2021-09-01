@@ -15,6 +15,8 @@ export const Container = styled.nav`
   }
   @media only screen and (max-width: 600px) {
     padding: 20px 10vw;
+    height: 85px;
+
   }
 `;
 

@@ -1,7 +1,8 @@
 import Card from "./card";
-import { Container, Cards, Footer } from "./styles";
+import { Container, Cards, Footer, FooterWrapper } from "./styles";
 import SectionTitle from "../reusable-components/SectionTitle";
 import Link from "next/link";
+import MainFooter from "../reusable-components/footerWrapper";
 
 const options = { year: "numeric", month: "long", day: "numeric" };
 const BlogsComponent = ({ blogs, page = false }) => {
@@ -34,6 +35,7 @@ const BlogsComponent = ({ blogs, page = false }) => {
           </Link>
         </Footer>
       ) : null}
+      {page ? <MainFooter /> : null}
     </Container>
   );
 };

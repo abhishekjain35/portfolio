@@ -11,7 +11,7 @@ export const Container = styled.section`
     theme.darkMode
       ? `url(${Constellation.src})`
       : `url(${ConstellationLight.src})`};
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   padding-top: ${({ page }) => (page ? "145px" : "50px")};
 `;
 
@@ -37,8 +37,8 @@ export const Header = styled.div`
     height: 5px;
     width: 100px;
   }
-  @media only screen and (max-width: 1000px){
-    h1{
+  @media only screen and (max-width: 1000px) {
+    h1 {
       font-size: 35px;
     }
   }
@@ -56,3 +56,4 @@ export const Footer = styled.footer`
     }
   }
 `;
+

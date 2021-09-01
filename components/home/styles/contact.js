@@ -5,9 +5,12 @@ export const Container = styled.div`
   height: calc(100vh - 95px);
   background: ${({ theme }) => (theme.darkMode ? theme.background : "#fff")};
   position: relative;
-  overflow-y: hidden;
+  overflow-x: hidden;
   @media only screen and (max-width: 750px) {
     min-height: 450px;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 100vh;
   }
 `;
 
@@ -50,6 +53,9 @@ export const Wrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media only screen and (max-width: 350px) {
+    width: calc(100% - 60px);
+  }
 `;
 
 export const Title = styled.div`
@@ -61,6 +67,9 @@ export const P = styled.p`
   font-family: Gotham-bold;
   font-size: 30px;
   margin: 5px 0;
+  @media only screen and (max-height: 600px) {
+    font-size: 25px;
+  }
 `;
 
 export const SocialMedia = styled.section`
@@ -84,6 +93,9 @@ export const RightContainer = styled.div`
   margin-bottom: 70px;
   @media only screen and (max-width: 700px) {
     margin-bottom: 160px;
+  }
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 50px;
   }
 `;
 
@@ -194,4 +206,8 @@ export const Footer = styled.div`
   position: absolute;
   bottom: 50px;
   width: 100%;
+  @media only screen and (max-width: 450px) {
+    bottom: 0;
+    padding: 20px;
+  }
 `;

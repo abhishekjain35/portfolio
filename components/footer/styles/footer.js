@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const Container = styled.footer`
   width: 100%;
-  /* height: 95px; */
   display: flex;
   justify-content: space-between;
   font-family: Gotham;
@@ -11,9 +10,12 @@ export const Container = styled.footer`
 `;
 
 export const Links = styled.div`
-  width: 12.5%;
+  width: 16.5%;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
 `;
 
 export const Link = styled.a`
@@ -48,10 +50,57 @@ export const Link = styled.a`
   }
 `;
 
+export const IconContainer = styled.div`
+  width: 100%;
+`;
+
 export const Copyright = styled.div`
   color: #c6c8cc;
   font-size: 14px;
   @media only screen and (max-width: 1600px) {
     font-size: 11px;
   }
+  text-align: center;
+`;
+
+export const Icons = styled.ul`
+  @media only screen and (max-width: 900px) {
+    display: flex;
+  }
+  @media only screen and (min-width: 901px) {
+    display: none;
+  }
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+
+  & > li {
+    display: inline;
+    color: ${({ theme }) => theme.text};
+    margin-right: 15px;
+  }
+  & a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 13px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    @media only screen and (max-width: 400px){
+      width: 45px;
+      height: 45px;
+    }
+  }
+`;
+
+export const Wrapper = styled.div`
+  background: transparent;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
 `;

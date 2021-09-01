@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  /* height: 100vh; */
-  background: #f1f2f3;
+  background: ${({theme}) => theme.background};
   background-size: cover;
 `;
 
@@ -63,11 +62,17 @@ export const ImageSection = styled.section`
 export const InfoTextContainer = styled.aside`
   padding-top: 20px;
   margin: auto;
+  @media only screen and (max-width: 1000px) {
+    text-align: center;
+  }
   p {
     margin: 0;
     font-size: 1.8vw;
     font-style: italic;
     opacity: 0.9;
+    @media only screen and (max-width: 1000px) {
+      text-align: center;
+    }
   }
   h1 {
     margin: 0;

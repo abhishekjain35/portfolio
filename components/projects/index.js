@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container, Header, Cards, Footer } from "./styles/projects";
 import SectionTitle from "../reusable-components/SectionTitle";
 import Card from "./card";
+import MainFooter from "../reusable-components/footerWrapper";
 
 const ProjectsPage = ({ projects, page = false }) => {
   return (
@@ -30,6 +31,7 @@ const ProjectsPage = ({ projects, page = false }) => {
           </Link>
         </Footer>
       ) : null}
+      {page ? <MainFooter /> : null}
     </Container>
   );
 };
