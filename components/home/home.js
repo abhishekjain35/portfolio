@@ -20,9 +20,9 @@ const Home = () => {
             A Full Stack Developer, who loves <br />
             <Typical
               steps={[
-                "Programming .",
+                "Messing around with code.",
                 1000,
-                "Making the web more beautiful.",
+                "Making & Breaking things.",
                 1000,
                 "Blogging.",
                 1000,
@@ -31,7 +31,7 @@ const Home = () => {
                 "Exploring the tech.",
                 1000,
               ]}
-              loop={1}
+              loop={Infinity}
               wrapper="span"
             />
           </p>

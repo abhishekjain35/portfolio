@@ -3,8 +3,6 @@ import styled from "@emotion/styled";
 export const FooterWrapper = styled.div`
   width: 100%;
   background: ${({ theme }) => (theme.darkMode ? theme.background : "#fff")};
-  /* position: relative;
-  bottom: 0; */
   height: 95px;
   display: flex;
   justify-content: center;
