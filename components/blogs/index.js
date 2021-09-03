@@ -1,6 +1,6 @@
 import Card from "./card";
 import { Container, Cards, Footer, FooterWrapper } from "./styles";
-import SectionTitle from "../reusable-components/SectionTitle";
+import SectionTitle from "../reusable-components/sectionTitle";
 import Link from "next/link";
 import MainFooter from "../reusable-components/footerWrapper";
 

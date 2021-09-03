@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Container, Header, Cards, Footer } from "./styles/projects";
-import SectionTitle from "../reusable-components/SectionTitle";
+import SectionTitle from "../reusable-components/sectionTitle";
 import Card from "./card";
 import MainFooter from "../reusable-components/footerWrapper";
 
