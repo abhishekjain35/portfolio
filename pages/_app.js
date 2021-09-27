@@ -45,6 +45,33 @@ function MyApp({ Component, pageProps }) {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Github - @abhishekjain35 | abhishekdev - Abhishek Jain's Portfolio website | Full Stack web developer | ReactJs, NodeJs, ExpressJs, MongoDB."
+        />
+        <meta
+          property="og:title"
+          content="Abhishek Jain | Full stack web developer"
+        />
+        <meta
+          property="og:description"
+          content="Abhishek Jain | Full stack web developer"
+        />
+        <meta property="og:url" content="https://abhishekjain.tech/" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          name="twitter:card"
+          content="abhishekdev - Abhishek Jain's Portfolio website. Abhishek Jain Full Stack web developer abhishekjai35@gmail.com - ReactJs, NodeJs, ExpressJs, MongoDB etc."
+        />
+        <meta
+          name="twitter:title"
+          content="Abhishek Jain | Full stack web developer"
+        />
+        <meta
+          name="twitter:description"
+          content="Abhishek Jain | Full stack web developer"
+        />
         <title>Abhishek Jain</title>
       </Head>
       <ThemeProvider

@@ -4,11 +4,10 @@ import Switch from "./styles/toggle";
 const ToggleComponent = ({mobile}) => {
   const theme = useTheme();
   return (
-    <Switch className="switch" htmlFor="themeInput" mobile={mobile}>
+    <Switch className="switch" htmlFor="themeinput" mobile={mobile}>
       <input
         type="checkbox"
-        id="themeInput"
-        aria-label="Select Theme"
+        id="themeinput"
         checked={theme.darkMode}
         onChange={() => theme.toggle()}
       />

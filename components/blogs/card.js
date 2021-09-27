@@ -96,7 +96,7 @@ const Card = ({ image, likes, date, title, description, url }) => {
           <Description>{description}</Description>
           <span>
             <ReadMore href={url}>
-              <span>Read more</span>
+              <span>Read Post</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

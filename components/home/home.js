@@ -41,7 +41,7 @@ const Home = () => {
         </InfoTextContainer>
       </InfoSection>
       <ImageSection>
-        <Image src={Main} alt="MAIN" />
+        <Image src={Main} alt="MAIN" priority={true} />
       </ImageSection>
     </MainPage>
   );

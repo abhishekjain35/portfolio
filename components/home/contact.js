@@ -21,7 +21,7 @@ import { BaseFooter } from "../footer";
 const Contacts = () => {
   return (
     <Container>
-      <SectionTitle>Contacts</SectionTitle>
+      <SectionTitle aria-hidden={true}>Contacts</SectionTitle>
       <SectionText>contact me!</SectionText>
       <Lines className="lines">
         <div className="lines_i lines_i__1"></div>
@@ -43,7 +43,11 @@ const Contacts = () => {
         <SocialMedia>
           <LeftContainer>
             <Label>Twitter:</Label>
-            <Link href="https://twitter.com/Abhishek_Jain35" target="_blank">
+            <Link
+              href="https://twitter.com/Abhishek_Jain35"
+              target="_blank"
+              rel="noreferrer"
+            >
               twitter.com/Abhishek_Jain35
             </Link>
           </LeftContainer>
