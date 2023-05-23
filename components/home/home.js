@@ -1,12 +1,14 @@
+import { memo } from "react";
+import Link from "next/link";
+import Image from "next/image";
+
 import {
   MainPage,
   InfoSection,
   ImageSection,
   InfoTextContainer,
 } from "./styles/home";
-import Link from "next/link";
 import Typical from "./typing";
-import Image from "next/image";
 import Main from "./assets/hero-graphic.webp";
 
 const Home = () => {
@@ -47,4 +49,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default memo(Home);
